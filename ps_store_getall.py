@@ -91,4 +91,4 @@ df = df.apply(lambda x: x.astype(float) if x.name in price_cols else x)
 today = date.today()
 df['Saved'] = 'Saved on ' + str(today)
 df.iloc[1:,3] = ''
-df.to_csv(r'C:\Users\Rodrigo-PC\projects\PS_Store.csv', index = False)
+df.to_csv(r'mylocation.csv', index = False)
